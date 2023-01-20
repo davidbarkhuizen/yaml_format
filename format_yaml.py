@@ -49,5 +49,5 @@ def transform(line: Line, pre_indent: int = 2, level_limit: int = 2, line_length
 
 final = [transform(line) for line in lines]
 
-with open(f'{source_file_path}', 'w') as f:
+with open(source_file_path, 'w') as f:
     f.write('\n'.join(final))
